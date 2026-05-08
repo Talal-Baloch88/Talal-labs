@@ -613,6 +613,12 @@
       transition: 0.3s ease;
     }
 
+    #contact-form {
+    transform: none !important;
+    transition: none !important;
+    cursor: default !important;
+}
+
     .form-group input:focus ~ label,
     .form-group input:not(:placeholder-shown) ~ label,
     .form-group textarea:focus ~ label,
@@ -631,43 +637,7 @@
       border: none;
     }
 
-    /* ===== AI ARCHITECT SECTION ===== */
-    .ai-container {
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .ai-input-wrapper {
-      margin-bottom: 2rem;
-      position: relative;
-    }
-
-    .ai-output-card {
-      min-height: 150px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: left;
-      display: none;
-    }
-
-    .ai-output-card.active {
-      display: flex;
-    }
-
-    .ai-result-text {
-      color: var(--text-main);
-      font-size: 1rem;
-      line-height: 1.8;
-      width: 100%;
-    }
-
-    .ai-result-text strong {
-      color: var(--accent);
-      font-weight: 600;
-    }
+    
 
     /* Loading Spinner */
     .loader {
