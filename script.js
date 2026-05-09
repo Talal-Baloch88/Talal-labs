@@ -30,8 +30,8 @@ function createParticleLayer(count, size, opacity) {
 }
 
 // 2. Setup Layers & Lines
-const backgroundLayer = createParticleLayer(400, 0.8, 0.3);
-const foregroundLayer = createParticleLayer(100, 2.0, 0.8); // Fewer points in foreground for better line performance
+const backgroundLayer = createParticleLayer(4000, 0.8, 0.3);
+const foregroundLayer = createParticleLayer(600, 2.0, 0.8); // Fewer points in foreground for better line performance
 scene.add(backgroundLayer, foregroundLayer);
 
 const linesGeometry = new THREE.BufferGeometry();
@@ -61,16 +61,16 @@ function animate() {
     const elapsedTime = clock.getElapsedTime();
 
     // Smooth movement logic (Lerping)
-    targetX += (mouseX - targetX) * 0.05;
-    targetY += (mouseY - targetY) * 0.05;
+    targetX += (mouseX - targetX) * 0.03;
+    targetY += (mouseY - targetY) * 0.03;
 
     // Rotate and Position Background
-    backgroundLayer.rotation.y = elapsedTime * 0.01;
+    backgroundLayer.rotation.y = elapsedTime * 0.02; // Slower rotation for background
     backgroundLayer.position.x = targetX * 30;
     backgroundLayer.position.y = -targetY * 30;
 
     // Rotate and Position Foreground
-    foregroundLayer.rotation.y = -elapsedTime * 0.03;
+    foregroundLayer.rotation.y = -elapsedTime * 0.01;
     foregroundLayer.position.x = targetX * 80;
     foregroundLayer.position.y = -targetY * 80;
 
