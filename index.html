@@ -27,7 +27,7 @@
       <ul class="nav-links" id="nav-links">
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#project">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="hamburger" id="hamburger">
@@ -46,7 +46,7 @@
         <h2>AI Consulting <span class="accent">&</span> IT Services</h2>
         <p class="hero-desc">We build intelligent systems, automate workflows, and deliver cutting-edge digital products that push the boundary of what's possible.</p>
         <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">
+          <a href="#project" class="btn btn-primary">
             <span>Explore Projects</span>
             <i class="fas fa-arrow-right"></i>
           </a>
@@ -114,6 +114,58 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+
+      <section id="project" class="section">
+  <div class="container">
+    <h2 class="section-heading" data-reveal>
+      <span class="accent">//</span> Featured Projects
+    </h2>
+
+    <div class="projects-grid">
+      
+      <div class="featured-mini-card glass-card" data-tilt>
+  <div class="mini-card-img-wrapper">
+    <img src="assets/what.jpeg" alt="AI Project" />
+  </div>
+  
+  <div class="mini-card-body">
+    <h4>Talal-Labs AI</h4>
+    <p>Autonomous administrative layer for government ddddddddddddddddddddddddddddddddddddddd
+      dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+    
+    <button class="btn btn-outline btn-small" 
+            onclick="showProject(
+              'Talal-Labs AI', 
+              'assets/project1-full.jpg', 
+              'PASTE YOUR WHOLE SCRIPT OR LONG DETAIL HERE. You can use <br> for new lines. This text stays hidden until the user clicks!')">
+      Learn More
+    </button>
+  </div>
+</div>
+
+      </div>
+  </div>
+
+  
+</section>
+
+<div id="projectDetailSlide" class="project-slide-overlay">
+  <div class="slide-content-container">
+    <button class="close-slide-btn" onclick="hideProject()">&larr; Back to Portfolio</button>
+    
+    <div class="slide-body">
+      <div class="slide-hero-img">
+        <img id="slideImg" src="" alt="Project Image">
+      </div>
+      <h2 id="slideTitle" class="section-heading">Project Title</h2>
+      <div id="slideDescription" class="slide-text-body">
+        </div>
+    </div>
+  </div>
+</div>
   </section>
 
 

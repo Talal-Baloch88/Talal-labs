@@ -110,3 +110,32 @@ window.addEventListener('resize', () => {
     renderer.setSize(window.innerWidth, window.innerHeight);
     
 });
+
+
+/*Project Detail Slide Logic*/
+
+function showProject(title, image, description) {
+    const slide = document.getElementById('projectDetailSlide');
+    
+    // Set the data
+    document.getElementById('slideTitle').innerText = title;
+    document.getElementById('slideImg').src = image;
+    document.getElementById('slideDescription').innerText = description;
+    
+    // Add 'active' class to trigger the CSS transition
+    slide.classList.add('active');
+    
+    // Prevent background scrolling
+    document.body.style.overflow = 'hidden';
+}
+
+function hideProject() {
+    const slide = document.getElementById('projectDetailSlide');
+    slide.classList.remove('active');
+    
+    // Enable background scrolling again
+    document.body.style.overflow = 'auto';
+}
+
+/* Inside your showProject function */
+document.getElementById('slideDescription').innerHTML = description; // Changed from innerText
