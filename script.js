@@ -113,29 +113,23 @@ window.addEventListener('resize', () => {
 
 
 /*Project Detail Slide Logic*/
+function openSlide(btn) {
+  const card = btn.closest('.featured-mini-card');
+  const title = card.querySelector('h2').innerText;
+  const img = card.querySelector('img').src;
+  const longText = card.querySelector('.hidden-content').innerHTML;
 
-function showProject(title, image, description) {
-    const slide = document.getElementById('projectDetailSlide');
-    
-    // Set the data
-    document.getElementById('slideTitle').innerText = title;
-    document.getElementById('slideImg').src = image;
-    document.getElementById('slideDescription').innerText = description;
-    
-    // Add 'active' class to trigger the CSS transition
-    slide.classList.add('active');
-    
-    // Prevent background scrolling
-    document.body.style.overflow = 'hidden';
+  const overlay = document.getElementById('projectDetailSlide');
+  document.getElementById('slideTitle').innerText = title;
+  document.getElementById('slideImg').src = img;
+  document.getElementById('slideDescription').innerHTML = longText;
+
+  overlay.classList.add('active');
+  document.body.style.overflow = 'hidden'; 
 }
 
 function hideProject() {
-    const slide = document.getElementById('projectDetailSlide');
-    slide.classList.remove('active');
-    
-    // Enable background scrolling again
-    document.body.style.overflow = 'auto';
+  document.getElementById('projectDetailSlide').classList.remove('active');
+  document.body.style.overflow = 'auto';
 }
 
-/* Inside your showProject function */
-document.getElementById('slideDescription').innerHTML = description; // Changed from innerText
