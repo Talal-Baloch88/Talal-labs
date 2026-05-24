@@ -1,5 +1,3 @@
-
-
 /* =========================================
    5. THREE.JS BACKGROUND (Integrated Master)
 ========================================= */
@@ -12,7 +10,40 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 camera.position.z = 150;
 
-// 1. Helper to create particle layers
+// --- 1. FUNCTION TO CREATE A 2D HEXAGON TEXTURE ---
+// This draws a perfect 2D hexagon to use as our particle shape instead of a boring square point
+function createHexagonTexture() {
+    const canvas = document.createElement('canvas');
+    canvas.width = 64;
+    canvas.height = 64;
+    const ctx = canvas.getContext('2d');
+
+    ctx.clearRect(0, 0, 64, 64);
+    ctx.beginPath();
+    
+    const size = 28; // Radius of the hexagon
+    const centerX = 32;
+    const centerY = 32;
+    
+    for (let i = 0; i < 6; i++) {
+        const angle = (i / 6) * Math.PI * 2;
+        const x = centerX + Math.cos(angle) * size;
+        const y = centerY + Math.sin(angle) * size;
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+    }
+    ctx.closePath();
+    
+    // Fill with solid white (Three.js will tint this color dynamically)
+    ctx.fillStyle = '#ffffff';
+    ctx.fill();
+    
+    return new THREE.CanvasTexture(canvas);
+}
+
+const hexTexture = createHexagonTexture();
+
+// --- 2. Helper to create particle layers ---
 function createParticleLayer(count, size, opacity) {
     const geometry = new THREE.BufferGeometry();
     const posArray = new Float32Array(count * 3);
@@ -24,16 +55,18 @@ function createParticleLayer(count, size, opacity) {
     const material = new THREE.PointsMaterial({
         size: size,
         color: 0x00f0ff,
+        map: hexTexture,        // Apply our custom 2D hexagon shape here!
         transparent: true,
         opacity: opacity,
-        blending: THREE.AdditiveBlending
+        blending: THREE.AdditiveBlending,
+        depthWrite: false       // Prevents the flat shapes from clipping each other
     });
     return new THREE.Points(geometry, material);
 }
 
-// 2. Setup Layers & Lines
-const backgroundLayer = createParticleLayer(4000, 0.8, 0.3);
-const foregroundLayer = createParticleLayer(600, 2.0, 0.8); // Fewer points in foreground for better line performance
+// --- 3. Setup Layers & Lines ---
+const backgroundLayer = createParticleLayer(4000, 1.5, 0.3); // Tiny distant hexagons
+const foregroundLayer = createParticleLayer(400, 4.5, 0.8);  // Crisp, visible 2D hexagons up front
 scene.add(backgroundLayer, foregroundLayer);
 
 const linesGeometry = new THREE.BufferGeometry();
@@ -46,7 +79,7 @@ const linesMaterial = new THREE.LineBasicMaterial({
 const linesMesh = new THREE.LineSegments(linesGeometry, linesMaterial);
 scene.add(linesMesh);
 
-// 3. Interaction State
+// --- 4. Interaction State ---
 let mouseX = 0, mouseY = 0;
 let targetX = 0, targetY = 0;
 
@@ -57,7 +90,7 @@ document.addEventListener('mousemove', (e) => {
 
 const clock = new THREE.Clock();
 
-// 4. THE SINGLE MASTER ANIMATION LOOP
+// --- 5. THE SINGLE MASTER ANIMATION LOOP ---
 function animate() {
     requestAnimationFrame(animate);
     const elapsedTime = clock.getElapsedTime();
@@ -67,7 +100,7 @@ function animate() {
     targetY += (mouseY - targetY) * 0.03;
 
     // Rotate and Position Background
-    backgroundLayer.rotation.y = elapsedTime * 0.02; // Slower rotation for background
+    backgroundLayer.rotation.y = elapsedTime * 0.02;
     backgroundLayer.position.x = targetX * 30;
     backgroundLayer.position.y = -targetY * 30;
 
@@ -80,7 +113,6 @@ function animate() {
     const positions = foregroundLayer.geometry.attributes.position.array;
     const linePoints = [];
     
-    // We only connect points in the foreground for that crisp "3D" feel
     for (let i = 0; i < positions.length; i += 3) {
         for (let j = i + 3; j < positions.length; j += 3) {
             const dx = positions[i] - positions[j];
@@ -108,7 +140,6 @@ window.addEventListener('resize', () => {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
-    
 });
 
 
@@ -132,4 +163,8 @@ function hideProject() {
   document.getElementById('projectDetailSlide').classList.remove('active');
   document.body.style.overflow = 'auto';
 }
+
+const sendEmail = (e) => {
+  e.preventDefault();
+};
 
