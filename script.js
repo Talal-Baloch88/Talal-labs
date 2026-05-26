@@ -54,7 +54,7 @@ function createParticleLayer(count, size, opacity) {
     
     const material = new THREE.PointsMaterial({
         size: size,
-        color: 0x00f0ff,
+        color: 0x38b6ff,
         map: hexTexture,        // Apply our custom 2D hexagon shape here!
         transparent: true,
         opacity: opacity,
@@ -71,7 +71,7 @@ scene.add(backgroundLayer, foregroundLayer);
 
 const linesGeometry = new THREE.BufferGeometry();
 const linesMaterial = new THREE.LineBasicMaterial({
-    color: 0x00f0ff,
+    color: 0x38b6ff,
     transparent: true,
     opacity: 0.15,
     blending: THREE.AdditiveBlending

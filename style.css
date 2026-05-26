@@ -16,9 +16,9 @@
       --bg-color: #151515;
       --text-main: #f0f0f5;
       --text-muted: #9ba1a6;
-      --accent: #00eeffe7;
-      --accent-glow: rgba(0, 238, 255, 0.715);
-      --glass-bg: rgba(34, 34, 36, 0.251);
+      --accent:  #38b6ffea;
+      --accent-glow:  rgba(56, 182, 255, 0.769);
+      --glass-bg: rgba(34, 34, 36, 0);
       --glass-border: rgba(255, 255, 255, 0);
       --font-display: 'Space Grotesk', sans-serif;
       --font-body: 'Outfit', sans-serif;
@@ -31,13 +31,25 @@
       box-sizing: border-box;
     }
     
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-main);
-      font-family: var(--font-body);
-      overflow-x: hidden;
-      line-height: 1.6;
-    }
+   body {
+  /* This keeps your text, font, and layout exactly the same */
+  color: var(--text-main);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  line-height: 1.6;
+
+  /* 1. We update the background color to a deep, premium dark tone */
+  background-color: #030712; 
+
+  /* 2. We add the soft, premium Nvidia-style ambient glows on top */
+  background-image: 
+    radial-gradient(circle at 10% 15%, rgba(56, 182, 255, 0.272) 0%, transparent 45%),
+    radial-gradient(circle at 90% 85%, rgba(56, 182, 255, 0.272) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(3, 7, 18, 0.514) 0%, #02040a 100%);
+  
+  /* 3. This ensures the ambient glow stays fixed while your content scrolls */
+  background-attachment: fixed;
+}
 
     h1, h2, h3, .logo, .hero-tag {
       font-family: var(--font-display);
