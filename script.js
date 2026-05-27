@@ -73,7 +73,7 @@ const linesGeometry = new THREE.BufferGeometry();
 const linesMaterial = new THREE.LineBasicMaterial({
     color: 0x38b6ff,
     transparent: true,
-    opacity: 0.15,
+    opacity: 0.30,
     blending: THREE.AdditiveBlending
 });
 const linesMesh = new THREE.LineSegments(linesGeometry, linesMaterial);
