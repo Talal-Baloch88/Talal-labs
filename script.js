@@ -65,7 +65,7 @@ function createParticleLayer(count, size, opacity) {
 }
 
 // --- 3. Setup Layers & Lines ---
-const backgroundLayer = createParticleLayer(4000, 1.5, 0.3); // Tiny distant hexagons
+const backgroundLayer = createParticleLayer(10000, 1.5, 0.3); // Tiny distant hexagons
 const foregroundLayer = createParticleLayer(400, 4.5, 0.8);  // Crisp, visible 2D hexagons up front
 scene.add(backgroundLayer, foregroundLayer);
 
