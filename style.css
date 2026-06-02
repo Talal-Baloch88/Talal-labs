@@ -113,7 +113,7 @@ body::before {
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  padding: 0.8rem 0;
+  padding: 0.1rem 0;
 }
 
 .nav-container {
@@ -352,12 +352,57 @@ body::before {
 /* ==========================================================================
    6. INTERACTIVE BIO PROFILE & STRATEGIC CONTENT FIELDS
    ========================================================================== */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
+}
+
+.image{
+  width: 100%; 
+  height: auto; 
+  display: block; 
+  border-radius: 16px; 
+  object-fit: cover;
+}
+
+.about-image {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Specialized image glass-card glow mechanics matching home theme colors */
+.about-image .glass-card {
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45), 0 0 40px rgba(56, 182, 255, 0.03);
+  transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              box-shadow 0.3s ease, 
+              border-color 0.3s ease;
+             
+}
+
+.about-image .glass-card:hover {
+  border-color: rgba(56, 182, 255, 0.5);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6), 0 0 40px var(--accent-glow);
+}
+
+.about-image img {
+  transition: filter 0.3s ease;
+}
+
+.about-image .glass-card:hover img {
+  filter: brightness(1.04) contrast(1.02);
+}
+
 .about-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: center;
-  
 }
 
 .lead {
@@ -510,7 +555,7 @@ body::before {
   right: -100%;
   width: 100%;
   height: 100%;
-  background: rgba(3, 7, 18, 0.98);
+  background: rgba(3, 7, 18, 0.855);
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
   z-index: 10000;
@@ -532,8 +577,8 @@ body::before {
 
 .close-slide-btn {
   background: transparent;
-  color: #00eeff;
-  border: 1px solid rgba(0, 238, 255, 0.249);
+  color:  #00c3ff;
+  border: 1px solid rgb(0, 195, 255);
   padding: 10px 25px;
   font-family: var(--font-body);
   text-transform: uppercase;
@@ -544,8 +589,8 @@ body::before {
 }
 
 .close-slide-btn:hover {
-  background: rgba(0, 240, 255, 0.1);
-  border-color: #00f0ff;
+  background: rgba(0, 195, 255, 0.101);
+  border-color: rgb(0, 195, 255);
 }
 
 /* MOBILE FIX: Adaptive layout limits to safely maintain image alignment under 600px widths */
@@ -758,9 +803,15 @@ body::before {
 }
 
 @media (max-width: 992px) {
-  .about-container, .contact-grid {
+  .about-container, .about-grid, .contact-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
+  }
+  
+  /* Positions layout portrait box cleanly over text strings on compressed displays */
+  .about-image {
+    grid-row: 1;
+    margin-bottom: 0.5rem;
   }
 }
 
