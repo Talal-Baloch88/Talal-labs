@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -35,7 +36,7 @@
     <div class="hero-wrapper" id="hero-wrapper">
       <div class="hero-text" data-reveal>
         <p class="hero-tag">Welcome to</p>
-        <h1>Talal-Labs<span class="accent">.</span></h1>
+        <h1>TalalLabs<span class="accent">.</span></h1>
         <h2>AI Consulting <span class="accent">&</span> IT Services</h2>
         <p class="hero-desc">We build intelligent systems, automate workflows, and deliver cutting-edge digital products that push the boundary of what's possible.</p>
         <div class="hero-actions">
@@ -53,8 +54,6 @@
     </div>
   </section>
  
-  <!-- About section -->
-
   <section id="about" class="section">
     <div class="container">
       
@@ -64,7 +63,7 @@
       
       <div class="about-grid">
         <div class="about-text" data-reveal>
-          <p class="lead">I'm <strong>Talal Baloch</strong> — founder of Talal Labs, developer, and AI systems builder. Not everyone can point to the exact moment their direction became clear. I can. It was in 9th grade. A mentor sat down with me and showed me what web development actually was — not the polished surface that everyone sees, but the architecture underneath. The logic. The structure. The way a system thinks. Most people look at a website and see a page. That day, I started seeing the machine. That moment did not give me a skill. It gave me an obsession. For a long time, that obsession lived quietly — following the evolution of technology, watching how artificial intelligence was beginning to reshape every industry, every government, every system that humans had built. I was not just consuming information. I was developing a perspective. Building a mental model of where everything was heading.</p>
+          <p class="lead">I'm <strong>Talal.</strong> — founder of Talal Labs, developer, and AI systems builder. Not everyone can point to the exact moment their direction became clear. I can. It was in 9th grade. A mentor sat down with me and showed me what web development actually was — not the polished surface that everyone sees, but the architecture underneath. The logic. The structure. The way a system thinks. Most people look at a website and see a page. That day, I started seeing the machine. That moment did not give me a skill. It gave me an obsession. For a long time, that obsession lived quietly — following the evolution of technology, watching how artificial intelligence was beginning to reshape every industry, every government, every system that humans had built. I was not just consuming information. I was developing a perspective. Building a mental model of where everything was heading.</p>
           <p>Then came the moment I stopped watching and started building. That decision changed everything. Since then, every project I take on follows one non-negotiable principle: high-velocity iteration. I build. I stress-test. I identify every point of failure. I iterate. I do not treat technical obstacles as interruptions — I treat them as accelerated classrooms. Every system I have broken taught me exactly how to build the next one stronger. Every mistake became institutionalized knowledge. Nothing is wasted. Talal Labs exists because of one belief I cannot shake: the gap between what AI can actually do and what most companies and governments are doing with it is not a technical problem. It is an implementation problem. The technology exists. The will to deploy it correctly — and the people who know how — are far rarer. I am not here to talk about artificial intelligence. I am here to build the systems that make it operational, practical, and real — for the companies and governments that cannot afford to wait for someone else to figure it out first.</p>
           
           <div class="skills-cloud">
@@ -94,8 +93,6 @@
     </div>
   </section>
 
-  <!--projects section-->
-
   <section id="project" class="section">
     <div class="container">
       <h2 class="section-heading"><span class="accent">//</span> Featured Projects</h2>
@@ -124,8 +121,8 @@
         </div>
       </div>
     </div>
-  </section>   
-
+  </section> 
+  
   <section id="contact" class="section">
     <div class="container">
       <h2 class="section-heading" data-reveal>
@@ -151,7 +148,8 @@
             <a href="https://x.com/TalalBaloc82569" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
           </div>
         </div>
-        <form class="contact-form glass-card" data-reveal id="contact-form" onsubmit="event.preventDefault();">
+
+        <form class="contact-form glass-card" data-reveal id="contact-form">
           <div class="form-group">
             <input type="text" id="form-name" required placeholder=" " />
             <label for="form-name">Your Name</label>
@@ -161,7 +159,7 @@
             <label for="form-email">Your Email</label>
           </div>
           <div class="form-group">
-            <input type="textarea" id="form-message" rows="5" required placeholder=" "></textarea>
+            <textarea id="form-message" rows="5" required placeholder=" "></textarea>
             <label for="form-message">Your Message</label>
           </div>
           <button type="submit" class="btn btn-primary btn-submit">
@@ -169,6 +167,7 @@
             <i class="fas fa-paper-plane"></i>
           </button>
         </form>
+
       </div>
     </div>
   </section>
@@ -181,12 +180,19 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "h9Yn5xwQzg9-cWbzS",
+      });
+    })();
+  </script>
+
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       
-      /* =========================================
-         1. CSS 3D INTERACTIVE CARDS (TILT EFFECT)
-      ========================================= */
+      /* 1. CSS 3D INTERACTIVE CARDS (TILT EFFECT) */
       const cards = document.querySelectorAll('.glass-card');
       
       cards.forEach(card => {
@@ -212,9 +218,7 @@
         });
       });
 
-      /* =========================================
-         2. HERO PARALLAX ON MOUSE MOVE
-      ========================================= */
+      /* 2. HERO PARALLAX ON MOUSE MOVE */
       const heroWrapper = document.getElementById('hero-wrapper');
       document.addEventListener('mousemove', (e) => {
         const xAxis = (window.innerWidth / 2 - e.pageX) / 50;
@@ -224,9 +228,7 @@
         }
       });
 
-      /* =========================================
-         3. SCROLL REVEAL ANIMATIONS
-      ========================================= */
+      /* 3. SCROLL REVEAL ANIMATIONS */
       const revealElements = document.querySelectorAll('[data-reveal]');
       const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -239,9 +241,7 @@
 
       revealElements.forEach(el => revealObserver.observe(el));
 
-      /* =========================================
-         4. NAVBAR & MOBILE MENU LOGIC
-      ========================================= */
+      /* 4. NAVBAR & MOBILE MENU LOGIC */
       const navbar = document.getElementById('navbar');
       const hamburger = document.getElementById('hamburger');
       const navLinks = document.getElementById('nav-links');
@@ -265,7 +265,7 @@
         let current = '';
         sections.forEach(section => {
           const sectionTop = section.offsetTop;
-          if (scrollY >= sectionTop - 200) {
+          if (window.scrollY >= sectionTop - 200) {
             current = section.getAttribute('id');
           }
         });
@@ -279,7 +279,7 @@
       });
     });
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+
   <script src="script.js"></script>
 
   <div id="projectDetailSlide" class="project-slide-overlay">

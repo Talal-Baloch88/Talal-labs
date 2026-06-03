@@ -1,6 +1,6 @@
-/* =========================================
+/* ==========================================================================
    5. THREE.JS BACKGROUND (Integrated Master)
-========================================= */
+========================================================================== */
 const canvas = document.getElementById('three-canvas');
 const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -10,8 +10,6 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 camera.position.z = 150;
 
-// --- 1. FUNCTION TO CREATE A 2D HEXAGON TEXTURE ---
-// This draws a perfect 2D hexagon to use as our particle shape instead of a boring square point
 function createHexagonTexture() {
     const canvas = document.createElement('canvas');
     canvas.width = 64;
@@ -21,7 +19,7 @@ function createHexagonTexture() {
     ctx.clearRect(0, 0, 64, 64);
     ctx.beginPath();
     
-    const size = 28; // Radius of the hexagon
+    const size = 28; 
     const centerX = 32;
     const centerY = 32;
     
@@ -34,7 +32,6 @@ function createHexagonTexture() {
     }
     ctx.closePath();
     
-    // Fill with solid white (Three.js will tint this color dynamically)
     ctx.fillStyle = '#ffffff';
     ctx.fill();
     
@@ -43,7 +40,6 @@ function createHexagonTexture() {
 
 const hexTexture = createHexagonTexture();
 
-// --- 2. Helper to create particle layers ---
 function createParticleLayer(count, size, opacity) {
     const geometry = new THREE.BufferGeometry();
     const posArray = new Float32Array(count * 3);
@@ -55,18 +51,17 @@ function createParticleLayer(count, size, opacity) {
     const material = new THREE.PointsMaterial({
         size: size,
         color: 0x38b6ff,
-        map: hexTexture,        // Apply our custom 2D hexagon shape here!
+        map: hexTexture,        
         transparent: true,
         opacity: opacity,
         blending: THREE.AdditiveBlending,
-        depthWrite: false       // Prevents the flat shapes from clipping each other
+        depthWrite: false       
     });
     return new THREE.Points(geometry, material);
 }
 
-// --- 3. Setup Layers & Lines ---
-const backgroundLayer = createParticleLayer(10000, 1.5, 0.3); // Tiny distant hexagons
-const foregroundLayer = createParticleLayer(400, 4.5, 0.8);  // Crisp, visible 2D hexagons up front
+const backgroundLayer = createParticleLayer(10000, 1.5, 0.3); 
+const foregroundLayer = createParticleLayer(400, 4.5, 0.8);  
 scene.add(backgroundLayer, foregroundLayer);
 
 const linesGeometry = new THREE.BufferGeometry();
@@ -79,7 +74,6 @@ const linesMaterial = new THREE.LineBasicMaterial({
 const linesMesh = new THREE.LineSegments(linesGeometry, linesMaterial);
 scene.add(linesMesh);
 
-// --- 4. Interaction State ---
 let mouseX = 0, mouseY = 0;
 let targetX = 0, targetY = 0;
 
@@ -90,26 +84,21 @@ document.addEventListener('mousemove', (e) => {
 
 const clock = new THREE.Clock();
 
-// --- 5. THE SINGLE MASTER ANIMATION LOOP ---
 function animate() {
     requestAnimationFrame(animate);
     const elapsedTime = clock.getElapsedTime();
 
-    // Smooth movement logic (Lerping)
     targetX += (mouseX - targetX) * 0.03;
     targetY += (mouseY - targetY) * 0.03;
 
-    // Rotate and Position Background
     backgroundLayer.rotation.y = elapsedTime * 0.02;
     backgroundLayer.position.x = targetX * 30;
     backgroundLayer.position.y = -targetY * 30;
 
-    // Rotate and Position Foreground
     foregroundLayer.rotation.y = -elapsedTime * 0.01;
     foregroundLayer.position.x = targetX * 80;
     foregroundLayer.position.y = -targetY * 80;
 
-    // --- Neural Network Line Logic ---
     const positions = foregroundLayer.geometry.attributes.position.array;
     const linePoints = [];
     
@@ -120,7 +109,7 @@ function animate() {
             const dz = positions[i+2] - positions[j+2];
             const dist = Math.sqrt(dx*dx + dy*dy + dz*dz);
 
-            if (dist < 55) { // Connection distance
+            if (dist < 55) { 
                 linePoints.push(positions[i], positions[i+1], positions[i+2]);
                 linePoints.push(positions[j], positions[j+1], positions[j+2]);
             }
@@ -143,7 +132,9 @@ window.addEventListener('resize', () => {
 });
 
 
-/*Project Detail Slide Logic*/
+/* ==========================================================================
+   6. PROJECT DETAIL SLIDE OVERLAY LOGIC
+========================================================================== */
 function openSlide(btn) {
   const card = btn.closest('.featured-mini-card');
   const title = card.querySelector('h2').innerText;
@@ -164,7 +155,43 @@ function hideProject() {
   document.body.style.overflow = 'auto';
 }
 
-const sendEmail = (e) => {
-  e.preventDefault();
-};
 
+/* ==========================================================================
+   INTERACTIVE LEAD CAPTURE ENGINE (EMAILJS INTEGRATION)
+========================================================================== */
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault(); 
+
+    const form = this;
+    const submitBtn = form.querySelector('.btn-submit');
+    const loader = document.querySelector('.loader');
+
+    if (loader) loader.classList.add('active');
+    if (submitBtn) submitBtn.style.display = 'none';
+
+    const templateParams = {
+        title: `New Portfolio Inquiry from ${document.getElementById('form-name').value}`,
+        name: document.getElementById('form-name').value,
+        from_name: document.getElementById('form-name').value,
+        reply_to: document.getElementById('form-email').value,
+        message: document.getElementById('form-message').value
+    }; // Fixed: Missing closing brace target cleanly matched here
+
+    emailjs.send('talal1212', 'template_skmrklp', templateParams)
+        .then(function(response) {
+            console.log('TRANSMISSION SUCCESSFUL:', response.status, response.text);
+            
+            if (loader) loader.classList.remove('active');
+            if (submitBtn) submitBtn.style.display = 'flex';
+            
+            form.reset(); 
+            alert('Message engine online. Your transmission was sent successfully!');
+        }, function(error) {
+            console.error('TRANSMISSION FAILED:', error);
+            
+            if (loader) loader.classList.remove('active');
+            if (submitBtn) submitBtn.style.display = 'flex';
+            
+            alert('Transmission failed. Please check your system configuration or try again.');
+        });
+});
