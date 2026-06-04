@@ -1,0 +1,513 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - button "Guide" [active] [ref=e9] [cursor=pointer]
+          - generic [ref=e11]:
+            - link "YouTube Home" [ref=e12] [cursor=pointer]:
+              - /url: /
+            - generic [ref=e16]: PK
+          - button "Skip navigation" [ref=e20] [cursor=pointer]:
+            - generic [ref=e21]: Skip navigation
+        - generic [ref=e25]:
+          - search [ref=e26]:
+            - generic [ref=e27]:
+              - generic [ref=e28]:
+                - combobox "Search" [expanded] [ref=e30]: Alps
+                - button "Clear search query" [ref=e32] [cursor=pointer]
+              - button "Search" [ref=e37] [cursor=pointer]
+          - generic [ref=e40]:
+            - button "Search with your voice" [ref=e42] [cursor=pointer]
+            - tooltip "tooltip"
+    - navigation [ref=e53]
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - tablist [ref=e63]:
+            - tab "All" [selected] [ref=e67] [cursor=pointer]:
+              - generic [ref=e69]: All
+            - tab "Shorts" [ref=e76] [cursor=pointer]:
+              - generic [ref=e78]: Shorts
+            - tab "Unwatched" [ref=e85] [cursor=pointer]:
+              - generic [ref=e87]: Unwatched
+            - tab "Watched" [ref=e94] [cursor=pointer]:
+              - generic [ref=e96]: Watched
+            - tab "Videos" [ref=e103] [cursor=pointer]:
+              - generic [ref=e105]: Videos
+            - tab "Recently uploaded" [ref=e112] [cursor=pointer]:
+              - generic [ref=e114]: Recently uploaded
+            - tab "Live" [ref=e121] [cursor=pointer]:
+              - generic [ref=e123]: Live
+          - generic [ref=e128]:
+            - button "Search filters" [ref=e130] [cursor=pointer]:
+              - generic [ref=e131]: Filters
+            - tooltip "tooltip"
+        - generic [ref=e142]:
+          - generic [ref=e144]:
+            - link [ref=e146] [cursor=pointer]:
+              - /url: /watch?v=BTMjD7_evjE&list=RDBTMjD7_evjE&start_radio=1&pp=ygUEQWxwc6AHAQ%3D%3D
+              - img [ref=e148]
+            - generic [ref=e149] [cursor=pointer]:
+              - generic [ref=e150]:
+                - generic [ref=e151]:
+                  - heading "The Alps 4K - Scenic Relaxation Film With Calming Music 1 hour" [level=3] [ref=e152]:
+                    - link "The Alps 4K - Scenic Relaxation Film With Calming Music 1 hour" [ref=e153]:
+                      - /url: /watch?v=BTMjD7_evjE&list=RDBTMjD7_evjE&start_radio=1&pp=ygUEQWxwc6AHAQ%3D%3D
+                      - text: The Alps 4K - Scenic Relaxation Film With Calming Music
+                  - button "Action menu" [ref=e157]
+                - generic [ref=e161]:
+                  - generic [ref=e162]: 7.5M views
+                  - generic [ref=e163]: •4 years ago
+              - generic [ref=e164]:
+                - link "Go to channel Scenic Relaxation" [ref=e165]:
+                  - /url: /@ScenicRelaxationFilms
+                - generic [ref=e167]:
+                  - link "Scenic Relaxation" [ref=e171]:
+                    - /url: /@ScenicRelaxationFilms
+                  - img "Verified" [ref=e176]
+              - generic [ref=e178]:
+                - generic [ref=e179]: The Alps are possibly the most magical region in the world! Enjoy this 4k Scenic Relaxation film across the wonders of the ...
+                - tooltip "tooltip"
+              - img "4K" [ref=e184]:
+                - generic [ref=e185]: 4K
+              - generic [ref=e188]:
+                - generic [ref=e189]:
+                  - generic [ref=e193]: 32 moments
+                  - button "ALPE DI SUSI | NEUSCHWANSTEIN CASTLE | LAKE BLED | CHURCH OF Sv. Tomaž | ISELTWALD | VAL DI FUNES | MATTERHORN | APPENZELL | TRE CIME DI LAVAREDO | DOLOMITES | LACO DI BRALES | LAUTERBRUNNEN | ZERMATT | HALLSTATT | SASSOLUNCO | LAC D'EMOSSON | LIMMERNSEE | AICULE DU MIDI | SCHAFBERG | GROSSGLOCKNER | HALLSTATE | LAUSKOPF GIPFEL | TRAUNKIRCHEN | DACHSTEIN | SLOVENIA | GRINDELWALD | ALETSCH GLACIER | LACO DI BRATES | ANNECY | TILAUNKIRCHEN | JULIAN ALPS | RIVER SOCA" [ref=e194]
+                - button "More" [ref=e199]
+          - generic [ref=e206]:
+            - link [ref=e208] [cursor=pointer]:
+              - /url: /watch?v=vG-Bgdxb7L8&pp=ygUEQWxwcw%3D%3D
+              - img [ref=e210]
+            - generic [ref=e211] [cursor=pointer]:
+              - generic [ref=e212]:
+                - generic [ref=e213]:
+                  - heading "The Alps Explained 17 minutes" [level=3] [ref=e214]:
+                    - link "The Alps Explained 17 minutes" [ref=e215]:
+                      - /url: /watch?v=vG-Bgdxb7L8&pp=ygUEQWxwcw%3D%3D
+                      - text: The Alps Explained
+                  - button "Action menu" [ref=e219]
+                - generic [ref=e223]:
+                  - generic [ref=e224]: 1M views
+                  - generic [ref=e225]: •3 months ago
+              - generic [ref=e226]:
+                - link "Go to channel FactSpark" [ref=e227]:
+                  - /url: /@FactSpark
+                - link "FactSpark" [ref=e233]:
+                  - /url: /@FactSpark
+              - generic [ref=e234]:
+                - text: "Join me in the game JordGlobe Geography, the Duolingo for Geography! Download now for Android: ..."
+                - tooltip "tooltip"
+              - img "Closed captions" [ref=e239]:
+                - generic [ref=e240]: CC
+              - generic [ref=e243]:
+                - generic [ref=e244]:
+                  - generic [ref=e247]: Summary
+                  - button "FactSpark explores the diverse geographical, cultural, and political impacts of this 1,200 km long European mountain range. The journey covers key trade routes, iconic summits, and the unique challenges faced by communities living within its valleys." [ref=e248]
+                  - text: ·
+                - button "More" [ref=e253]
+          - generic [ref=e259]:
+            - generic [ref=e262]:
+              - img [ref=e264]
+              - heading "Shorts" [level=2] [ref=e267]
+            - generic [ref=e269]:
+              - generic [ref=e272]:
+                - link [ref=e273] [cursor=pointer]:
+                  - /url: /shorts/RG5Y1hOwbU0
+                  - img [ref=e278]:
+                    - generic [ref=e279]: New
+                - generic [ref=e280] [cursor=pointer]:
+                  - link "Building a Luxury Snowflake Pool in the Alps | Full Construction Timelapse !" [ref=e281]:
+                    - /url: /shorts/RG5Y1hOwbU0
+                  - generic [ref=e282]: 1.6K views
+                - button "More actions" [ref=e284] [cursor=pointer]
+              - generic [ref=e292]:
+                - link [ref=e293] [cursor=pointer]:
+                  - /url: /shorts/-fzcY6IwqwM
+                - generic [ref=e297] [cursor=pointer]:
+                  - 'link "Alps were once a sea#geography #map #europe #earth #alps #knowledge" [ref=e298]':
+                    - /url: /shorts/-fzcY6IwqwM
+                  - generic [ref=e299]: 42K views
+                - button "More actions" [ref=e301] [cursor=pointer]
+              - generic [ref=e309]:
+                - link [ref=e310] [cursor=pointer]:
+                  - /url: /shorts/JVSi0qgqfXI
+                - generic [ref=e314] [cursor=pointer]:
+                  - 'link "Summer in the Alps - Austria, Italy, Germany #hiking" [ref=e315]':
+                    - /url: /shorts/JVSi0qgqfXI
+                  - generic [ref=e316]: 181K views
+                - button "More actions" [ref=e318] [cursor=pointer]
+              - generic [ref=e326]:
+                - link [ref=e327] [cursor=pointer]:
+                  - /url: /shorts/UVqnSeyO4G4
+                - generic [ref=e331] [cursor=pointer]:
+                  - 'link "Grindelwald: A Swiss Alpine Paradise" [ref=e332]':
+                    - /url: /shorts/UVqnSeyO4G4
+                  - generic [ref=e333]: 1M views
+                - button "More actions" [ref=e335] [cursor=pointer]
+              - generic [ref=e343]:
+                - link [ref=e344] [cursor=pointer]:
+                  - /url: /shorts/UBsUf069kqI
+                  - img [ref=e349]:
+                    - generic [ref=e350]: New
+                - generic [ref=e351] [cursor=pointer]:
+                  - link "💧 The Alps don't sell their best water. They give it to you." [ref=e352]:
+                    - /url: /shorts/UBsUf069kqI
+                  - generic [ref=e353]: 779 views
+                - button "More actions" [ref=e355] [cursor=pointer]
+          - generic [ref=e362]:
+            - link [ref=e364] [cursor=pointer]:
+              - /url: /watch?v=3PZ65s2qLTE&list=RD3PZ65s2qLTE&start_radio=1&pp=ygUEQWxwc6AHAQ%3D%3D
+            - generic [ref=e366] [cursor=pointer]:
+              - generic [ref=e367]:
+                - generic [ref=e368]:
+                  - heading "The Alps 4K - 60 Minute Relaxation Film with Calming Music 1 hour" [level=3] [ref=e369]:
+                    - link "The Alps 4K - 60 Minute Relaxation Film with Calming Music 1 hour" [ref=e370]:
+                      - /url: /watch?v=3PZ65s2qLTE&list=RD3PZ65s2qLTE&start_radio=1&pp=ygUEQWxwc6AHAQ%3D%3D
+                      - text: The Alps 4K - 60 Minute Relaxation Film with Calming Music
+                  - button "Action menu" [ref=e374]
+                - generic [ref=e378]:
+                  - generic [ref=e379]: 5.8M views
+                  - generic [ref=e380]: •5 years ago
+              - generic [ref=e381]:
+                - link "Go to channel Scenic Relaxation" [ref=e382]:
+                  - /url: /@ScenicRelaxationFilms
+                - generic [ref=e383]:
+                  - link "Scenic Relaxation" [ref=e387]:
+                    - /url: /@ScenicRelaxationFilms
+                  - img "Verified" [ref=e392]
+              - generic [ref=e394]:
+                - generic [ref=e395]: The European Alps are the most beautiful region in the world! Enjoy this 4k one hour visual journey across the mountains of ...
+                - tooltip "tooltip"
+              - img "4K" [ref=e400]:
+                - generic [ref=e401]: 4K
+          - generic [ref=e403]:
+            - link [ref=e405] [cursor=pointer]:
+              - /url: /watch?v=QLh1tnvDCdw&pp=ygUEQWxwcw%3D%3D
+            - generic [ref=e407] [cursor=pointer]:
+              - generic [ref=e408]:
+                - generic [ref=e409]:
+                  - heading "Rick Steves Best of the Alps 55 minutes" [level=3] [ref=e410]:
+                    - link "Rick Steves Best of the Alps 55 minutes" [ref=e411]:
+                      - /url: /watch?v=QLh1tnvDCdw&pp=ygUEQWxwcw%3D%3D
+                      - text: Rick Steves Best of the Alps
+                  - button "Action menu" [ref=e415]
+                - generic [ref=e419]:
+                  - generic [ref=e420]: 4.9M views
+                  - generic [ref=e421]: •4 years ago
+              - generic [ref=e422]:
+                - link "Go to channel Rick Steves' Europe" [ref=e423]:
+                  - /url: /@RickStevesEuropeOfficial
+                - generic [ref=e424]:
+                  - link "Rick Steves' Europe" [ref=e428]:
+                    - /url: /@RickStevesEuropeOfficial
+                  - img "Verified" [ref=e433]
+              - generic [ref=e435]:
+                - text: Rick Steves' Europe Travel Guide © 2020 | In this one-hour special, join Rick Steves on an alpine adventure, with scenic train ...
+                - tooltip "tooltip"
+              - img "Closed captions" [ref=e440]:
+                - generic [ref=e441]: CC
+              - generic [ref=e444]:
+                - generic [ref=e445]:
+                  - generic [ref=e449]: 23 chapters
+                  - button "Introduction | Zugspitze | Walderalm Farm | Innsbruck | Brenner Pass | Dolomites | Kastelruth | Alpe di Siusi | Matterhorn | Zermatt | Little Matterhorn viewpoint | Glacier Express train line | Appenzell | Lauterbrunnen Valley | Kleine Scheidegg | Jungfraujoch station | Enjoying the trails | Gimmelwald | Schilthorn | Chamonix | Mer de Glace | Tour du Mont Blanc | Conclusion" [ref=e450]
+                - button "More" [ref=e455]
+          - generic [ref=e462]:
+            - link [ref=e464] [cursor=pointer]:
+              - /url: /watch?v=aZltta3nu7o&list=RDaZltta3nu7o&start_radio=1&pp=ygUEQWxwc6AHAQ%3D%3D
+            - generic [ref=e466] [cursor=pointer]:
+              - generic [ref=e467]:
+                - generic [ref=e468]:
+                  - heading "FLYING OVER THE ALPS (4K UHD) - Soothing Music With Stunning Beautiful Nature Film For Relaxation 11 hours, 55 minutes" [level=3] [ref=e469]:
+                    - link "FLYING OVER THE ALPS (4K UHD) - Soothing Music With Stunning Beautiful Nature Film For Relaxation 11 hours, 55 minutes" [ref=e470]:
+                      - /url: /watch?v=aZltta3nu7o&list=RDaZltta3nu7o&start_radio=1&pp=ygUEQWxwc6AHAQ%3D%3D
+                      - text: FLYING OVER THE ALPS (4K UHD) - Soothing Music With Stunning Beautiful Nature Film For Relaxation
+                  - button "Action menu" [ref=e474]
+                - generic [ref=e478]:
+                  - generic [ref=e479]: 799K views
+                  - generic [ref=e480]: •Streamed 3 years ago
+              - generic [ref=e481]:
+                - link "Go to channel Earth Relaxation" [ref=e482]:
+                  - /url: /@earthrelaxation
+                - generic [ref=e483]:
+                  - link "Earth Relaxation" [ref=e487]:
+                    - /url: /@earthrelaxation
+                  - img "Verified" [ref=e492]
+              - generic [ref=e494]:
+                - generic [ref=e495]: Welcome to Earth Relaxation ! Alps, a small segment of a discontinuous mountain chain that stretches from the Atlas Mountains of ...
+                - tooltip "tooltip"
+              - img "4K" [ref=e500]:
+                - generic [ref=e501]: 4K
+              - generic [ref=e504]:
+                - generic [ref=e505]:
+                  - generic [ref=e509]: 6 moments
+                  - button "2 . Miracle Mountain - niaolin | 3 . Green Garden - niaolin | 4 . Forgiveness - niaolin | 7 . Calming Piano Music For Sleep - VPROD BGM | 11. Perfect Day Remix | 12. Tiny Box - niaolin" [ref=e510]
+                - button "More" [ref=e515]
+          - generic [ref=e521]:
+            - generic [ref=e524]:
+              - img [ref=e526]
+              - heading "Shorts" [level=2] [ref=e529]
+            - generic [ref=e530]:
+              - generic [ref=e531]:
+                - generic [ref=e534]:
+                  - link [ref=e535] [cursor=pointer]:
+                    - /url: /shorts/jTvUZU_X3AI
+                    - img [ref=e540]:
+                      - generic [ref=e541]: New
+                  - generic [ref=e542] [cursor=pointer]:
+                    - 'link "POV: Hiking Into the Fog in the Alps" [ref=e543]':
+                      - /url: /shorts/jTvUZU_X3AI
+                    - generic [ref=e544]: 2K views
+                  - button "More actions" [ref=e546] [cursor=pointer]
+                - generic [ref=e554]:
+                  - link [ref=e555] [cursor=pointer]:
+                    - /url: /shorts/7UavGD3RV2w
+                  - generic [ref=e559] [cursor=pointer]:
+                    - 'link "🗻 What are the Alps? The Alps Explained ~ Where are the Alps? The Alps Mountain Range #thealps#alps" [ref=e560]':
+                      - /url: /shorts/7UavGD3RV2w
+                    - generic [ref=e561]: 20K views
+                  - button "More actions" [ref=e563] [cursor=pointer]
+                - generic [ref=e571]:
+                  - link [ref=e572] [cursor=pointer]:
+                    - /url: /shorts/Ouw1kV6qskg
+                  - generic [ref=e576] [cursor=pointer]:
+                    - link "Expectations vs Reality in Austria’s Alps (mountains) Skiing FAIL 2023" [ref=e577]:
+                      - /url: /shorts/Ouw1kV6qskg
+                    - generic [ref=e578]: 192K views
+                  - button "More actions" [ref=e580] [cursor=pointer]
+                - generic [ref=e588]:
+                  - link [ref=e589] [cursor=pointer]:
+                    - /url: /shorts/5o7HhUQwgWc
+                  - generic [ref=e593] [cursor=pointer]:
+                    - 'link "alps \"ROSEMARY WATER: DOES IT REALLY WORK?\" #alpsgoodness #geniunereview #review" [ref=e594]':
+                      - /url: /shorts/5o7HhUQwgWc
+                    - generic [ref=e595]: 744K views
+                  - button "More actions" [ref=e597] [cursor=pointer]
+                - generic [ref=e605]:
+                  - link [ref=e606] [cursor=pointer]:
+                    - /url: /shorts/WazAUMmodoY
+                  - generic [ref=e610] [cursor=pointer]:
+                    - 'link "Where Are the Alps? 🌍 Europe''s Majestic Mountain Range #shorts #geography #europe #mountains #learn" [ref=e611]':
+                      - /url: /shorts/WazAUMmodoY
+                    - generic [ref=e612]: 25K views
+                  - button "More actions" [ref=e614] [cursor=pointer]
+              - generic [ref=e620]:
+                - generic [ref=e623]:
+                  - link [ref=e624] [cursor=pointer]:
+                    - /url: /shorts/VEX1egw3QBM
+                  - generic [ref=e628] [cursor=pointer]:
+                    - link "The Alps Are Unbelievable!" [ref=e629]:
+                      - /url: /shorts/VEX1egw3QBM
+                    - generic [ref=e630]: 51K views
+                  - button "More actions" [ref=e632] [cursor=pointer]
+                - generic [ref=e640]:
+                  - link [ref=e641] [cursor=pointer]:
+                    - /url: /shorts/Ez1MEvpDZ-4
+                  - generic [ref=e645] [cursor=pointer]:
+                    - link "Why Are Swiss Mountains Full of Secret Bunkers?" [ref=e646]:
+                      - /url: /shorts/Ez1MEvpDZ-4
+                    - generic [ref=e647]: 1.4M views
+                  - button "More actions" [ref=e649] [cursor=pointer]
+                - generic [ref=e657]:
+                  - link [ref=e658] [cursor=pointer]:
+                    - /url: /shorts/jCM632Wc038
+                  - generic [ref=e662] [cursor=pointer]:
+                    - link "Secret Entrance of the Alps" [ref=e663]:
+                      - /url: /shorts/jCM632Wc038
+                    - generic [ref=e664]: 15M views
+                  - button "More actions" [ref=e666] [cursor=pointer]
+                - generic [ref=e674]:
+                  - link [ref=e675] [cursor=pointer]:
+                    - /url: /shorts/1SSONUsNAj8
+                  - generic [ref=e679] [cursor=pointer]:
+                    - 'link "Untouched nature in the Swiss Alps. #switzerland #naturelovers #swissbeauty" [ref=e680]':
+                      - /url: /shorts/1SSONUsNAj8
+                    - generic [ref=e681]: 1.2M views
+                  - button "More actions" [ref=e683] [cursor=pointer]
+                - generic [ref=e691]:
+                  - link [ref=e692] [cursor=pointer]:
+                    - /url: /shorts/bFIM9yG1Bkc
+                    - img [ref=e697]:
+                      - generic [ref=e698]: New
+                  - generic [ref=e699] [cursor=pointer]:
+                    - link "Flying above the stunning French Alps 🌱" [ref=e700]:
+                      - /url: /shorts/bFIM9yG1Bkc
+                    - generic [ref=e701]: 35K views
+                  - button "More actions" [ref=e703] [cursor=pointer]
+            - button "Show more" [ref=e712] [cursor=pointer]:
+              - generic [ref=e713]: Show more
+          - generic [ref=e720]:
+            - link [ref=e722] [cursor=pointer]:
+              - /url: /watch?v=fDxHjLaSaZ8&list=RDfDxHjLaSaZ8&start_radio=1&pp=ygUEQWxwc6AHAQ%3D%3D
+            - generic [ref=e724] [cursor=pointer]:
+              - generic [ref=e725]:
+                - generic [ref=e726]:
+                  - heading "FLYING OVER THE ALPS (4K UHD) - Relaxing Music Along With Beautiful Nature Videos(4K Video Ultra HD) 11 hours, 54 minutes" [level=3] [ref=e727]:
+                    - link "FLYING OVER THE ALPS (4K UHD) - Relaxing Music Along With Beautiful Nature Videos(4K Video Ultra HD) 11 hours, 54 minutes" [ref=e728]:
+                      - /url: /watch?v=fDxHjLaSaZ8&list=RDfDxHjLaSaZ8&start_radio=1&pp=ygUEQWxwc6AHAQ%3D%3D
+                      - text: FLYING OVER THE ALPS (4K UHD) - Relaxing Music Along With Beautiful Nature Videos(4K Video Ultra HD)
+                  - button "Action menu" [ref=e732]
+                - generic [ref=e736]:
+                  - generic [ref=e737]: 1.2M views
+                  - generic [ref=e738]: •Streamed 5 years ago
+              - generic [ref=e739]:
+                - link "Go to channel Piano Relaxing" [ref=e740]:
+                  - /url: /@pianorelaxing4254
+                - generic [ref=e741]:
+                  - link "Piano Relaxing" [ref=e745]:
+                    - /url: /@pianorelaxing4254
+                  - img "Verified" [ref=e750]
+              - generic [ref=e752]:
+                - generic [ref=e753]: "The Alps is one of the largest and longest mountain ranges in Europe, spanning 8 countries, respectively: France, Switzerland, ..."
+                - tooltip "tooltip"
+              - img "4K" [ref=e758]:
+                - generic [ref=e759]: 4K
+          - generic [ref=e761]:
+            - link [ref=e763] [cursor=pointer]:
+              - /url: /watch?v=Cd1Tc2UpnDY&pp=ygUEQWxwcw%3D%3D
+            - generic [ref=e765] [cursor=pointer]:
+              - generic [ref=e766]:
+                - generic [ref=e767]:
+                  - heading "Swiss Alps 25 minutes" [level=3] [ref=e768]:
+                    - link "Swiss Alps 25 minutes" [ref=e769]:
+                      - /url: /watch?v=Cd1Tc2UpnDY&pp=ygUEQWxwcw%3D%3D
+                      - text: Swiss Alps
+                  - button "Action menu" [ref=e773]
+                - generic [ref=e777]:
+                  - generic [ref=e778]: 4.7M views
+                  - generic [ref=e779]: •5 years ago
+              - generic [ref=e780]:
+                - link "Go to channel Rick Steves' Europe" [ref=e781]:
+                  - /url: /@RickStevesEuropeOfficial
+                - generic [ref=e782]:
+                  - link "Rick Steves' Europe" [ref=e786]:
+                    - /url: /@RickStevesEuropeOfficial
+                  - img "Verified" [ref=e791]
+              - generic [ref=e793]:
+                - text: Rick Steves' Europe Travel Guide © 2020 | Switzerland draws travelers from around the world for its legendary mountains.
+                - tooltip "tooltip"
+              - img "Closed captions" [ref=e798]:
+                - generic [ref=e799]: CC
+              - generic [ref=e802]:
+                - generic [ref=e803]:
+                  - generic [ref=e807]: 13 chapters
+                  - button "Introduction | Zermatt | Matterhorn | Back to Zermatt | Little Matterhorn viewpoint | Glacier Express train line | Appenzell | Swiss heritage and folk museum | Lauterbrunnen Valley | Jungfraujoch station | Enjoying the trails | Gimmelwald | Schilthorn" [ref=e808]
+                - button "More" [ref=e813]
+          - generic [ref=e820]:
+            - link [ref=e822] [cursor=pointer]:
+              - /url: /watch?v=vZdYo_1Pwz8&pp=ygUEQWxwcw%3D%3D
+            - generic [ref=e824] [cursor=pointer]:
+              - generic [ref=e825]:
+                - generic [ref=e826]:
+                  - heading "my solo trip to the swiss alps 13 minutes, 41 seconds" [level=3] [ref=e827]:
+                    - link "my solo trip to the swiss alps 13 minutes, 41 seconds" [ref=e828]:
+                      - /url: /watch?v=vZdYo_1Pwz8&pp=ygUEQWxwcw%3D%3D
+                      - text: my solo trip to the swiss alps
+                  - button "Action menu" [ref=e832]
+                - generic [ref=e836]:
+                  - generic [ref=e837]: 3.5M views
+                  - generic [ref=e838]: •1 year ago
+              - generic [ref=e839]:
+                - link "Go to channel Brigette Laurie" [ref=e840]:
+                  - /url: /@brigettelaurie
+                - link "Brigette Laurie" [ref=e845]:
+                  - /url: /@brigettelaurie
+              - generic [ref=e846]:
+                - text: "WATCH THIS VERSION INSTEAD IT'S MUCH BETTER: https://www.youtube.com/watch?v=t5daW6S3sPc&t=621s i know some ..."
+                - tooltip "tooltip"
+              - img "4K" [ref=e851]:
+                - generic [ref=e852]: 4K
+          - generic [ref=e854]:
+            - link [ref=e856] [cursor=pointer]:
+              - /url: /watch?v=FCPdIvXo2rU&pp=ygUEQWxwcw%3D%3D
+            - generic [ref=e858] [cursor=pointer]:
+              - generic [ref=e859]:
+                - generic [ref=e860]:
+                  - heading "The Alps 4K | Drone & iPhone X 5 minutes, 7 seconds" [level=3] [ref=e861]:
+                    - link "The Alps 4K | Drone & iPhone X 5 minutes, 7 seconds" [ref=e862]:
+                      - /url: /watch?v=FCPdIvXo2rU&pp=ygUEQWxwcw%3D%3D
+                      - text: The Alps 4K | Drone & iPhone X
+                  - button "Action menu" [ref=e866]
+                - generic [ref=e870]:
+                  - generic [ref=e871]: 7.7M views
+                  - generic [ref=e872]: •7 years ago
+              - generic [ref=e873]:
+                - link "Go to channel Gaëtan Piolot" [ref=e874]:
+                  - /url: /@gaetanpiolot
+                - link "Gaëtan Piolot" [ref=e879]:
+                  - /url: /@gaetanpiolot
+              - generic [ref=e880]:
+                - generic [ref=e881]: I spent 3 weeks travelling across the Alps, in France, Italy, Switzerland, Austria and Germany. This video presents the amazing ...
+                - tooltip "tooltip"
+              - img "4K" [ref=e886]:
+                - generic [ref=e887]: 4K
+          - generic [ref=e889]:
+            - link [ref=e891] [cursor=pointer]:
+              - /url: /watch?v=7SDF0ZzDHzk&pp=ygUEQWxwcw%3D%3D
+            - generic [ref=e893] [cursor=pointer]:
+              - generic [ref=e894]:
+                - generic [ref=e895]:
+                  - heading "Top 30 Places In The Alps - Ultimate Travel Guide 25 minutes" [level=3] [ref=e896]:
+                    - link "Top 30 Places In The Alps - Ultimate Travel Guide 25 minutes" [ref=e897]:
+                      - /url: /watch?v=7SDF0ZzDHzk&pp=ygUEQWxwcw%3D%3D
+                      - text: Top 30 Places In The Alps - Ultimate Travel Guide
+                  - button "Action menu" [ref=e901]
+                - generic [ref=e905]:
+                  - generic [ref=e906]: 358K views
+                  - generic [ref=e907]: •4 years ago
+              - generic [ref=e908]:
+                - link "Go to channel Ryan Shirley" [ref=e909]:
+                  - /url: /@RyanShirley
+                - generic [ref=e910]:
+                  - link "Ryan Shirley" [ref=e914]:
+                    - /url: /@RyanShirley
+                  - img "Verified" [ref=e919]
+              - generic [ref=e921]:
+                - generic [ref=e922]: There is no place I love more than the European Alps! Enjoy this travel guide across the most incredible destinations in the Alps.
+                - tooltip "tooltip"
+              - img "4K" [ref=e927]:
+                - generic [ref=e928]: 4K
+              - generic [ref=e931]:
+                - generic [ref=e932]:
+                  - generic [ref=e936]: 31 chapters
+                  - button "Intro | Grindelwald | Limmernsee | Valle Verzasca | French Alps | Annecy | Berchtesgaden | Eagle's Nest | Königssee | Zugspitze | Eibsee | Wagenbrüchsee | Neuschwanstein Castle | Allgäu Alps | Dolomites & Seceda | Val di Funes | Alpi di Siusi & Sassolungo | Lago di Braies & Passo Giau | Tre Cime di Lavaredo | Slovenia | Austrian Alps | Appenzell | Oeschinensee | Aletsch Glacier | Jungfraujoch | Lauterbrunnen | Wengen | Murren | Schilthorn | Zermatt & Matterhorn | Outro" [ref=e937]
+                - button "More" [ref=e942]
+          - generic [ref=e949]:
+            - link [ref=e951] [cursor=pointer]:
+              - /url: /watch?v=EZ5ddy1z3dA&pp=ygUEQWxwcw%3D%3D
+            - generic [ref=e953] [cursor=pointer]:
+              - generic [ref=e954]:
+                - generic [ref=e955]:
+                  - 'heading "The Alps: Why Europe''s Largest Mountain Range Defies Geography 15 minutes" [level=3] [ref=e956]':
+                    - 'link "The Alps: Why Europe''s Largest Mountain Range Defies Geography 15 minutes" [ref=e957]':
+                      - /url: /watch?v=EZ5ddy1z3dA&pp=ygUEQWxwcw%3D%3D
+                      - text: "The Alps: Why Europe's Largest Mountain Range Defies Geography"
+                  - button "Action menu" [ref=e961]
+                - generic [ref=e965]:
+                  - generic [ref=e966]: 370K views
+                  - generic [ref=e967]: •10 months ago
+              - generic [ref=e968]:
+                - link "Go to channel Geography By Geoff" [ref=e969]:
+                  - /url: /@GeographyByGeoff
+                - generic [ref=e970]:
+                  - link "Geography By Geoff" [ref=e974]:
+                    - /url: /@GeographyByGeoff
+                  - img "Verified" [ref=e979]
+              - generic [ref=e981]:
+                - text: Subscribe to Ground News and get 40% off the Vantage plan by going to https://groundnews.com/geobygeoff -- Come join ...
+                - tooltip "tooltip"
+              - generic [ref=e984]:
+                - generic [ref=e985]:
+                  - generic [ref=e988]: Summary
+                  - button "Geography By Geoff explores how this massive range acts as a critical climate barrier and the water tower for the continent. The video examines the geological forces behind the Alps and their profound influence on European history, trade routes, and modern border definitions." [ref=e989]
+                  - text: ·
+                - button "More" [ref=e994]
+  - generic [ref=e1025]:
+    - link "The Alps Explained 17 minutes":
+      - /url: /watch?v=vG-Bgdxb7L8&pp=ygUEQWxwcw%3D%3D
+      - generic [ref=e1026] [cursor=pointer]:
+        - generic:
+          - generic:
+            - generic:
+              - img

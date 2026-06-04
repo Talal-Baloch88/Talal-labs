@@ -166,17 +166,18 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     const submitBtn = form.querySelector('.btn-submit');
     const loader = document.querySelector('.loader');
 
+    // Keep your clean visual loader animations running
     if (loader) loader.classList.add('active');
     if (submitBtn) submitBtn.style.display = 'none';
 
+    // UPDATED DATA KEYS HERE: Matching your new professional template structure
     const templateParams = {
-        title: `New Portfolio Inquiry from ${document.getElementById('form-name').value}`,
-        name: document.getElementById('form-name').value,
-        from_name: document.getElementById('form-name').value,
-        reply_to: document.getElementById('form-email').value,
-        message: document.getElementById('form-message').value
-    }; // Fixed: Missing closing brace target cleanly matched here
+        client_name: document.getElementById('form-name').value,
+        client_email: document.getElementById('form-email').value,
+        message_body: document.getElementById('form-message').value
+    }; 
 
+    // Kept your real service ID: 'talal1212'
     emailjs.send('talal1212', 'template_skmrklp', templateParams)
         .then(function(response) {
             console.log('TRANSMISSION SUCCESSFUL:', response.status, response.text);
