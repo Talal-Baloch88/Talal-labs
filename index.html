@@ -63,8 +63,14 @@
       
       <div class="about-grid">
         <div class="about-text" data-reveal>
-          <p class="lead">I'm <strong>Talal.</strong> — founder of Talal Labs, developer, and AI systems builder. Not everyone can point to the exact moment their direction became clear. I can. It was in 9th grade. A mentor sat down with me and showed me what web development actually was — not the polished surface that everyone sees, but the architecture underneath. The logic. The structure. The way a system thinks. Most people look at a website and see a page. That day, I started seeing the machine. That moment did not give me a skill. It gave me an obsession. For a long time, that obsession lived quietly — following the evolution of technology, watching how artificial intelligence was beginning to reshape every industry, every government, every system that humans had built. I was not just consuming information. I was developing a perspective. Building a mental model of where everything was heading.</p>
-          <p>Then came the moment I stopped watching and started building. That decision changed everything. Since then, every project I take on follows one non-negotiable principle: high-velocity iteration. I build. I stress-test. I identify every point of failure. I iterate. I do not treat technical obstacles as interruptions — I treat them as accelerated classrooms. Every system I have broken taught me exactly how to build the next one stronger. Every mistake became institutionalized knowledge. Nothing is wasted. Talal Labs exists because of one belief I cannot shake: the gap between what AI can actually do and what most companies and governments are doing with it is not a technical problem. It is an implementation problem. The technology exists. The will to deploy it correctly — and the people who know how — are far rarer. I am not here to talk about artificial intelligence. I am here to build the systems that make it operational, practical, and real — for the companies and governments that cannot afford to wait for someone else to figure it out first.</p>
+          <p class="lead">I'm <strong>Talal.</strong> 
+          — founder of Talal Labs, AI systems builder.
+          </p>
+
+          <p>
+            Most people look at technology and see tools. I see infrastructure. That shift in perspective started early — when a mentor first showed me that beneath every system is logic, structure, and decision-making architecture. That is what I have been building toward ever since.<br>
+Today Talal Labs engineers AI systems that solve real operational problems — automating workflows, integrating intelligent models into existing business infrastructure, and building the kind of systems that let companies and governments move faster without adding complexity. The gap between what AI can do and what most organizations are actually doing with it is an implementation problem. That is exactly the problem I exist to solve.
+          </p>
           
           <div class="skills-cloud">
             <span class="skill-chip">Strategic Planning</span>
@@ -102,19 +108,40 @@
           <div class="mini-card-img-wrapper"><img src="p1.png" alt="p1.png" /></div>
           <div class="mini-card-body">
             <h2 class="card-title">AI-Powered LinkedIn Content Engine</h2>
-            <div class="hidden-content" style="display:none;">I designed and deployed a fully automated content pipeline that bridges the gap between creative brainstorming and final publishing. By engineering a centralized automation layer connected with advanced AI models and webhooks, I transformed a manual, multi-step posting process into a streamlined "hands-off" workflow. This system ensures high-quality, AI-refined content is reviewed by the team and published to LinkedIn automatically, significantly reducing production time while maintaining brand voice.<br><br>
+            <div class="hidden-content" style="display:none;">
+              <p>
+             Speak or type raw content into Slack. The system handles everything else.<br><br>
 
-            Drafting & Centralization (Notion):<br>
-            I used Notion as the primary database where all raw content ideas and drafts are stored. This acts as the "Trigger" for the entire automation.<br><br>
 
-            AI Intelligence (Gemini):<br>
-            I integrated Gemini via API to automatically process drafts. The AI refines the tone, optimizes the hooks for LinkedIn's algorithm, and suggests improvements to the raw text.<br><br>
+             A Slack message triggers a Notion page update → Notion triggers Gemini to refine the raw content into a publish-ready LinkedIn post → the refined post replaces the raw text in Notion → auto-publishes to LinkedIn → Notion clears itself automatically to reset the loop without re-triggering.<br><br>
 
-            Communication & Approval Gate (Slack):<br>
-            To ensure quality control, I built a feedback loop where the AI-refined post is sent to a dedicated Slack channel. The team can review, edit, or approve the post directly from the chat interface.<br><br>
+             No manual steps. No copy-pasting. No scheduling. The pipeline is self-resetting.<br><br>
 
-            The Core Engine:<br>
-            Engineered the multi-step integration logic and secure webhooks that seamlessly route data flows between distinct enterprise environments, ensuring data flows correctly from drafting to final LinkedIn publication.
+             Built with: Slack Webhooks · Notion API · Gemini API · LinkedIn API ·
+
+              </p>
+
+              <h3 style="margin-top: 30px; margin-bottom: 20px; font-size: 1.3em; font-weight: 600;">The Pipeline in Action</h3>
+
+              <div class="pipeline-grid">
+                <div class="pipeline-step">
+                  <div class="step-number">1</div>
+                  <h4>Raw Content Enters the Pipeline</h4>
+                  <img src="slack.jpeg" alt="Slack - Raw content entry" class="step-screenshot">
+                </div>
+
+                <div class="pipeline-step">
+                  <div class="step-number">2</div>
+                  <h4>System Stores & Processes Input</h4>
+                  <img src="notion.png" alt="Notion - Content processing" class="step-screenshot">
+                </div>
+
+                <div class="pipeline-step">
+                  <div class="step-number">3</div>
+                  <h4>Refined Post Published Automatically</h4>
+                  <img src="linkedin.png" alt="LinkedIn - Published post" class="step-screenshot">
+                </div>
+              </div>
             </div>
             <button class="btn btn-outline btn-small .btn" onclick="openSlide(this)">Learn More</button>
           </div>
@@ -289,9 +316,16 @@
         <div class="slide-hero-img">
           <img id="slideImg" src="" alt="Project Preview">
         </div>
-        <h2 id="slideTitle" class="section-heading"></h2> 
-        <div id="slideDescription" class="slide-text-body"></div> 
+        <h2 id="slideTitle" class="section-heading"></h2>
+        <div id="slideDescription" class="slide-text-body"></div>
       </div>
+    </div>
+  </div>
+
+  <div id="imageModal" class="image-modal">
+    <div class="image-modal-content">
+      <button class="image-modal-close" onclick="closeImageModal()">&times;</button>
+      <img id="modalImage" src="" alt="Enlarged view">
     </div>
   </div>
 </body>

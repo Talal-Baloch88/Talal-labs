@@ -196,3 +196,46 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
             alert('Transmission failed. Please check your system configuration or try again.');
         });
 });
+
+
+/* ==========================================================================
+   7. IMAGE MODAL FUNCTIONALITY
+========================================================================== */
+function openImageModal(src) {
+  const modal = document.getElementById('imageModal');
+  const modalImage = document.getElementById('modalImage');
+  modalImage.src = src;
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeImageModal() {
+  const modal = document.getElementById('imageModal');
+  modal.classList.remove('active');
+  document.body.style.overflow = 'auto';
+}
+
+// Add click listeners to step screenshot images using event delegation
+document.addEventListener('DOMContentLoaded', function() {
+  // Event delegation for dynamically loaded images
+  document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('step-screenshot')) {
+      openImageModal(e.target.src);
+    }
+  });
+
+  // Close modal when clicking outside the image
+  const modal = document.getElementById('imageModal');
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      closeImageModal();
+    }
+  });
+
+  // Close modal with Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closeImageModal();
+    }
+  });
+});
